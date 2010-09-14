@@ -3,7 +3,7 @@
   <xs:import namespace="http://purl.org/atompub/revision/1.0" schemaLocation="ar.xsd"/>
   <xs:import namespace="http://www.w3.org/2005/Atom" schemaLocation="atom.xsd"/>
   <xs:element name="study-info">
-    <xs:complexType name="study-info-CT">
+    <xs:complexType name="CT">
       <xs:sequence>
         <xs:element ref="start"/>
         <xs:element ref="end"/>
