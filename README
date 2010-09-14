@@ -1,0 +1,8 @@
+Generated project with option 15: 
+mvn archetype:generate
+Configured eclipse
+mvn -DdownloadSources=true eclipse:eclipse
+
+Inferred xsd from xml:
+trang -I xml -O xsd study-info.xml study-info.xsd
+
