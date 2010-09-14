@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://purl.org/atompub/revision/1.0" xmlns:ar="http://purl.org/atompub/revision/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <xs:import schemaLocation="study-info.xsd"/>
+  <xs:import namespace="http://www.w3.org/2005/Atom" schemaLocation="atom.xsd"/>
+  <xs:element name="comment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="atom:author"/>
+        <xs:element ref="atom:updated"/>
+        <xs:element ref="atom:summary"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
