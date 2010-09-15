@@ -1,6 +1,7 @@
 package net.pizey.flattener;
 
 import java.io.File;
+import java.util.Iterator;
 
 import com.sun.xml.xsom.XSAnnotation;
 import com.sun.xml.xsom.XSAttGroupDecl;
@@ -21,6 +22,7 @@ import com.sun.xml.xsom.XSSimpleType;
 import com.sun.xml.xsom.XSTerm;
 import com.sun.xml.xsom.XSWildcard;
 import com.sun.xml.xsom.XSXPath;
+import com.sun.xml.xsom.impl.util.DraconianErrorHandler;
 import com.sun.xml.xsom.impl.util.SchemaTreeTraverser;
 import com.sun.xml.xsom.parser.XSOMParser;
 import com.sun.xml.xsom.visitor.XSVisitor;
@@ -37,6 +39,7 @@ public class App {
   private void parse(File file) {
     try {
       XSOMParser parser = new XSOMParser();
+      parser.setErrorHandler(new DraconianErrorHandler());
       parser.parse(file);
       this.schemaSet = parser.getResult();
       this.xsSchema = this.schemaSet.getSchema(1);
@@ -75,7 +78,19 @@ public class App {
     } else
       System.out.println("Not found");
     
+    System.out.println("-----------");
+    System.out.println("Target namespace: "+xsSchema.getTargetNamespace());
     
+    Iterator<XSElementDecl> jtr = xsSchema.iterateElementDecls();
+    while( jtr.hasNext() ) {
+      XSElementDecl e = (XSElementDecl)jtr.next();
+      
+      System.out.print( e.getName() );
+      if( e.isAbstract() )
+        System.out.print(" (abstract)");
+      System.out.println();
+    }
+    System.out.println("-----------");
   }
 
   private void visit() { 
@@ -83,8 +98,9 @@ public class App {
     
     MyTraverser stt = new MyTraverser();
     stt.visit(schemaSet);
-    System.err.println(stt.getModel().toString());
   }
+  
+  
   public static void main(String[] args) {
     App it = new App();
     File f = new File(args[0]);
@@ -214,9 +230,9 @@ class MyTraverser extends SchemaTreeTraverser {
         repeat = 5;
       else 
         repeat = part.getMaxOccurs();
-    System.err.println(part.toString());  
-    for (int i = 1; i < repeat; i++)
-      System.err.println(part.getTerm().toString() + repeat);  
+    //System.err.println(part.toString());  
+    //for (int i = 1; i < repeat; i++)
+    //  System.err.println(part.getTerm().toString() + repeat);  
   }
 
   @Override

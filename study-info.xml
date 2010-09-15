@@ -13,11 +13,11 @@
             <sites>
                 <site>
                     <country>AO</country>
-                    <region/>
-                    <district/>
-                    <locality/>
+                    <region>BANES</region>
+                    <district>Bath</district>
+                    <locality>Comber Down</locality>
                     <lookupAddress>   ANGOLA</lookupAddress>
-                    <siteCode/>
+                    <siteCode>site1</siteCode>
                     <testingDelay/>
                     <anticoagulant/>
                     <transportAndStorageTemperature/>
@@ -26,14 +26,41 @@
                     <transmissionIntensity>
                         <annualParasitologicalIncidence>1.2</annualParasitologicalIncidence>
                         <annualParasitologicalIncidenceYear>1993</annualParasitologicalIncidenceYear>
-                        <parasitePrevalence/>
-                        <parasitePrevalenceYear/>
+                        <parasitePrevalence>0.95</parasitePrevalence>
+                        <parasitePrevalenceYear>1960</parasitePrevalenceYear>
                         <transmissionIntensityAgeFrom>0</transmissionIntensityAgeFrom>
-                        <transmissionIntensityAgeFromUnits/>
+                        <transmissionIntensityAgeFromUnits>year</transmissionIntensityAgeFromUnits>
                         <transmissionIntensityAgeTo>12</transmissionIntensityAgeTo>
-                        <transmissionIntensityAgeToUnits/>
-                        <entomologicalInoculationRate/>
-                        <entomologicalInoculationRateYear/>
+                        <transmissionIntensityAgeToUnits>years</transmissionIntensityAgeToUnits>
+                        <entomologicalInoculationRate>0.87</entomologicalInoculationRate>
+                        <entomologicalInoculationRateYear>1970</entomologicalInoculationRateYear>
+                        <seasonalTransmission>true</seasonalTransmission>
+                        <transmissionMonths>feb mar jan</transmissionMonths>
+                    </transmissionIntensity>
+                </site>
+                <site>
+                    <country>AO</country>
+                    <region>BANES</region>
+                    <district>Bath</district>
+                    <locality>Comber Down</locality>
+                    <lookupAddress>   ANGOLA</lookupAddress>
+                    <siteCode>site1</siteCode>
+                    <testingDelay/>
+                    <anticoagulant/>
+                    <transportAndStorageTemperature/>
+                    <latitude>-13.154376055418515</latitude>
+                    <longitude>14.58984375</longitude>
+                    <transmissionIntensity>
+                        <annualParasitologicalIncidence>1.2</annualParasitologicalIncidence>
+                        <annualParasitologicalIncidenceYear>1993</annualParasitologicalIncidenceYear>
+                        <parasitePrevalence>0.95</parasitePrevalence>
+                        <parasitePrevalenceYear>1960</parasitePrevalenceYear>
+                        <transmissionIntensityAgeFrom>0</transmissionIntensityAgeFrom>
+                        <transmissionIntensityAgeFromUnits>year</transmissionIntensityAgeFromUnits>
+                        <transmissionIntensityAgeTo>12</transmissionIntensityAgeTo>
+                        <transmissionIntensityAgeToUnits>years</transmissionIntensityAgeToUnits>
+                        <entomologicalInoculationRate>0.87</entomologicalInoculationRate>
+                        <entomologicalInoculationRateYear>1970</entomologicalInoculationRateYear>
                         <seasonalTransmission>true</seasonalTransmission>
                         <transmissionMonths>feb mar jan</transmissionMonths>
                     </transmissionIntensity>
@@ -44,9 +71,9 @@
             <inclusionExclusionCriteria>
                 <age>
                     <maxAge>60</maxAge>
-                    <maxAgeUnits/>
+                    <maxAgeUnits>years</maxAgeUnits>
                     <minAge>0</minAge>
-                    <minAgeUnits/>
+                    <minAgeUnits>years</minAgeUnits>
                 </age>
                 <parasitaemia>
                     <minParasitaemia>0</minParasitaemia>
@@ -55,13 +82,13 @@
                 <includeMixedInfections>true</includeMixedInfections>
                 <excludeIfPriorAntimalarials>false</excludeIfPriorAntimalarials>
                 <priorAntimalarialsExclusion>
-                    <priorAntimalarials/>
-                    <priorAntimalarialsDetermination/>
-                    <priorAntimalarialsHistoryWeeks/>
+                    <priorAntimalarials>TET</priorAntimalarials>
+                    <priorAntimalarialsDetermination>history</priorAntimalarialsDetermination>
+                    <priorAntimalarialsHistoryWeeks>10</priorAntimalarialsHistoryWeeks>
                 </priorAntimalarialsExclusion>
                 <pregnancy>exclude</pregnancy>
-                <treatmentReason/>
-                <otherCriteria/>
+                <treatmentReason>ipt</treatmentReason>
+                <otherCriteria>height</otherCriteria>
             </inclusionExclusionCriteria>
             <clinical>
                 <treatment>
@@ -69,9 +96,9 @@
                         <regimen>
                             <regimenName>Regime 1</regimenName>
                             <regimenSupervision>full</regimenSupervision>
-                            <regimenUrl/>
+                            <regimenUrl>http://google.com</regimenUrl>
                             <drugs>
-                                <drug>
+                              <drug>
                                     <name>CoA</name>
                                     <activeIngredients>
                                         <activeIngredient>
@@ -125,100 +152,192 @@
                                     </ageDosing>
                                     <wGroupDosing>
                                         <wGroupDosingSchedule>
-                                            <day/>
-                                            <hour/>
-                                            <wGroupFrom/>
-                                            <wGroupTo/>
-                                            <dose/>
-                                            <doseUnit/>
+                                            <day>0</day>
+                                            <hour>morning</hour>
+                                            <wGroupFrom>10</wGroupFrom>
+                                            <wGroupTo>20</wGroupTo>
+                                            <dose>20</dose>
+                                            <doseUnit>tablet</doseUnit>
                                         </wGroupDosingSchedule>
                                     </wGroupDosing>
                                     <weightDosing>
                                         <weightDosingSchedule>
-                                            <day/>
-                                            <hour/>
-                                            <dose/>
+                                            <day>0</day>
+                                            <hour>morning</hour>
+                                            <dose>20</dose>
                                         </weightDosingSchedule>
                                     </weightDosing>
-                                    <feeding>fasting</feeding>
-                                    <fatPerMeal/>
-                                    <feedingOther/>
+                                    <feeding>highfat</feeding>
+                                    <fatPerMeal>50</fatPerMeal>
+                                    <feedingOther>nonstop</feedingOther>
                                     <readministeredOnVomitting>true</readministeredOnVomitting>
-                                    <comments/>
+                                    <comments>this is a test</comments>
+                                </drug>
+                            </drugs>
+                        </regimen>
+                        <regimen>
+                            <regimenName>Regime 1</regimenName>
+                            <regimenSupervision>full</regimenSupervision>
+                            <regimenUrl>http://paneris.net/</regimenUrl>
+                            <drugs>
+                            <drug>
+                                    <name>CoA</name>
+                                    <activeIngredients>
+                                        <activeIngredient>
+                                            <activeIngredientName>lumefantrine</activeIngredientName>
+                                            <activeIngredientMgPerDose>15</activeIngredientMgPerDose>
+                                        </activeIngredient>
+                                        <activeIngredient>
+                                            <activeIngredientName>artemether</activeIngredientName>
+                                            <activeIngredientMgPerDose>20</activeIngredientMgPerDose>
+                                        </activeIngredient>
+                                    </activeIngredients>
+                                    <administrationRoute>dispersal</administrationRoute>
+                                    <manufacturer>GSK</manufacturer>
+                                    <batchNumber>9085HP</batchNumber>
+                                    <expiryDate>2008-09-08</expiryDate>
+                                    <drugStorage>none</drugStorage>
+                                    <drugDosingDeterminant>age</drugDosingDeterminant>
+                                    <ageDosing>
+                                        <ageDosingSchedule>
+                                            <day>0</day>
+                                            <hour>morning</hour>
+                                            <ageFrom>0</ageFrom>
+                                            <ageTo>1</ageTo>
+                                            <dose>1</dose>
+                                            <doseUnit>tablet</doseUnit>
+                                        </ageDosingSchedule>
+                                        <ageDosingSchedule>
+                                            <day>0</day>
+                                            <hour>evening</hour>
+                                            <ageFrom>0</ageFrom>
+                                            <ageTo>1</ageTo>
+                                            <dose>1</dose>
+                                            <doseUnit>tablet</doseUnit>
+                                        </ageDosingSchedule>
+                                        <ageDosingSchedule>
+                                            <day>0</day>
+                                            <hour>morning</hour>
+                                            <ageFrom>1</ageFrom>
+                                            <ageTo>5</ageTo>
+                                            <dose>2</dose>
+                                            <doseUnit>tablet</doseUnit>
+                                        </ageDosingSchedule>
+                                        <ageDosingSchedule>
+                                            <day>0</day>
+                                            <hour>morning</hour>
+                                            <ageFrom>1</ageFrom>
+                                            <ageTo>5</ageTo>
+                                            <dose>2</dose>
+                                            <doseUnit>tablet</doseUnit>
+                                        </ageDosingSchedule>
+                                    </ageDosing>
+                                    <wGroupDosing>
+                                        <wGroupDosingSchedule>
+                                            <day>0</day>
+                                            <hour>morning</hour>
+                                            <wGroupFrom>10</wGroupFrom>
+                                            <wGroupTo>20</wGroupTo>
+                                            <dose>20</dose>
+                                            <doseUnit>tablet</doseUnit>
+                                        </wGroupDosingSchedule>
+                                    </wGroupDosing>
+                                    <weightDosing>
+                                        <weightDosingSchedule>
+                                            <day>0</day>
+                                            <hour>morning</hour>
+                                            <dose>20</dose>
+                                        </weightDosingSchedule>
+                                    </weightDosing>
+                                    <feeding>highfat</feeding>
+                                    <fatPerMeal>50</fatPerMeal>
+                                    <feedingOther>nonstop</feedingOther>
+                                    <readministeredOnVomitting>true</readministeredOnVomitting>
+                                    <comments>this is a test</comments>
                                 </drug>
                             </drugs>
                         </regimen>
                     </regimens>
                     <regimenAllocation>
-                        <regimenAllocationMethod/>
-                        <blinding/>
-                        <randomisationProportion/>
+                        <regimenAllocationMethod>randomised</regimenAllocationMethod>
+                        <blinding>double</blinding>
+                        <randomisationProportion>80</randomisationProportion>
                     </regimenAllocation>
                 </treatment>
                 <followup>
                     <duration>63</duration>
-                    <feverMeasurement/>
+                    <feverMeasurement>axial</feverMeasurement>
                     <haemoglobinRecording>
                         <haemoglobinRecordingType>hb</haemoglobinRecordingType>
                     </haemoglobinRecording>
                 </followup>
                 <microscopy>
                     <microscopyStain>fieldsstain</microscopyStain>
-                    <microscopyStainOther/>
+                    <microscopyStainOther>other</microscopyStainOther>
                     <asexualParasitemia>
                         <asexualParasitemiaNegativeCount>500</asexualParasitemiaNegativeCount>
                         <asexualParasitemiaPositiveThickUnit>200wbc</asexualParasitemiaPositiveThickUnit>
-                        <asexualParasitemiaPositiveThickUnitOther/>
+                        <asexualParasitemiaPositiveThickUnitOther>other</asexualParasitemiaPositiveThickUnitOther>
                         <asexualParasitemiaPositiveThinUnit>1000rbc</asexualParasitemiaPositiveThinUnit>
-                        <asexualParasitemiaPositiveThinUnitOther/>
+                        <asexualParasitemiaPositiveThinUnitOther>other</asexualParasitemiaPositiveThinUnitOther>
                     </asexualParasitemia>
                     <sexualParasitemia>
                         <sexualParasitemiaNegativeCount>500</sexualParasitemiaNegativeCount>
                         <sexualParasitemiaPositiveThickUnit>200wbc</sexualParasitemiaPositiveThickUnit>
-                        <sexualParasitemiaPositiveThickUnitOther/>
+                        <sexualParasitemiaPositiveThickUnitOther>other</sexualParasitemiaPositiveThickUnitOther>
                         <sexualParasitemiaPositiveThinUnit>1000rbc</sexualParasitemiaPositiveThinUnit>
-                        <sexualParasitemiaPositiveThinUnitOther/>
+                        <sexualParasitemiaPositiveThinUnitOther>other</sexualParasitemiaPositiveThinUnitOther>
                     </sexualParasitemia>
                     <thickFilmCalculationOfParasitemia>
-                        <thickFilmFormula/>
-                        <thickFilmFormulaOther/>
+                        <thickFilmFormula>xxx</thickFilmFormula>
+                        <thickFilmFormulaOther>other</thickFilmFormulaOther>
                     </thickFilmCalculationOfParasitemia>
                     <thinFilmCalculationOfParasitemia>
-                        <thinFilmFormula/>
-                        <thinFilmFormulaOther/>
+                        <thinFilmFormula>yy</thinFilmFormula>
+                        <thinFilmFormulaOther>other</thinFilmFormulaOther>
                     </thinFilmCalculationOfParasitemia>
                     <qualityControl>
                         <internal>
                             <percentageRereadBySecondMicroscopist>20</percentageRereadBySecondMicroscopist>
                             <rereadSlideSelectionMechanism>random</rereadSlideSelectionMechanism>
-                            <rereadSlideSelectionMechanismOther/>
+                            <rereadSlideSelectionMechanismOther>other</rereadSlideSelectionMechanismOther>
                         </internal>
                         <external>
                             <percentageRereadBySecondMicroscopist>0</percentageRereadBySecondMicroscopist>
-                            <rereadSlideSelectionMechanism/>
-                            <rereadSlideSelectionMechanismOther/>
+                            <rereadSlideSelectionMechanism>random</rereadSlideSelectionMechanism>
+                            <rereadSlideSelectionMechanismOther>other</rereadSlideSelectionMechanismOther>
                         </external>
                     </qualityControl>
                 </microscopy>
                 <geneotypingToDistinguishBetweenRecrudescenceAndReinfection>
-                    <applicability/>
+                    <applicability>true</applicability>
                     <applicable>
                         <markers>
                             <recrudescenceMarker>
-                                <markerName/>
-                                <markerOther/>
+                                <markerName>msp1</markerName>
+                                <markerOther>other</markerOther>
                                 <numberOfMicroSatellites/>
                             </recrudescenceMarker>
+                            <recrudescenceMarker>
+                                <markerName/>
+                                <markerOther>other</markerOther>
+                                <numberOfMicroSatellites/>
+                            </recrudescenceMarker>
+                            <recrudescenceMarker>
+                                <markerName>microsatellites</markerName>
+                                <markerOther/>
+                                <numberOfMicroSatellites>12</numberOfMicroSatellites>
+                            </recrudescenceMarker>
                         </markers>
-                        <genotypingLaboratory/>
-                        <markerDiscriminant/>
-                        <markerDiscriminantOther/>
+                        <genotypingLaboratory>Paris</genotypingLaboratory>
+                        <markerDiscriminant>cap</markerDiscriminant>
+                        <markerDiscriminantOther>other</markerDiscriminantOther>
                         <analysisProtocol>
                             <mixedAllelesOpen>
-                                <mixedAlleles/>
-                                <mixedAllelesOther/>
-                                <recrudescence/>
-                                <reinfection/>
+                                <mixedAlleles>recrudescense</mixedAlleles>
+                                <mixedAllelesOther>other</mixedAllelesOther>
+                                <recrudescence>old</recrudescence>
+                                <reinfection>new</reinfection>
                             </mixedAllelesOpen>
                         </analysisProtocol>
                     </applicable>
@@ -228,85 +347,91 @@
             <molecular>
                 <criteria>
                     <sampleSourceOpen>
-                        <sampleSource/>
-                        <sampleSourceOther/>
+                        <sampleSource>trial</sampleSource>
+                        <sampleSourceOther>other</sampleSourceOther>
                     </sampleSourceOpen>
-                    <malariaStatus/>
+                    <malariaStatus>severe</malariaStatus>
                 </criteria>
                 <sample>
                     <sampleTypeOpen>
-                        <sampleType/>
-                        <sampleTypeOther/>
-                        <wholeBloodSource/>
-                        <dateCultureIsolated/>
+                        <sampleType>whole</sampleType>
+                        <sampleTypeOther>other</sampleTypeOther>
+                        <wholeBloodSource>cord</wholeBloodSource>
+                        <dateCultureIsolated>2010/09/02</dateCultureIsolated>
                     </sampleTypeOpen>
                 </sample>
-                <genotypedMarkers/>
+                <genotypedMarkers>pyrosequencing</genotypedMarkers>
                 <mixedResistanceAlleles>
-                    <mixedResistanceAllelesInclusion/>
-                    <mixedResistanceAllelesDesignation/>
+                    <mixedResistanceAllelesInclusion>true</mixedResistanceAllelesInclusion>
+                    <mixedResistanceAllelesDesignation>both mixed mutant</mixedResistanceAllelesDesignation>
                 </mixedResistanceAlleles>
                 <additionalGenotypicInformation>
                     <sequencedLoci>
-                        <wholeGenomesSequenced/>
-                        <resistanceLociSequenced/>
+                        <wholeGenomesSequenced>true</wholeGenomesSequenced>
+                        <resistanceLociSequenced>true</resistanceLociSequenced>
                         <resistanceLoci>
                             <resistanceLocus>
                                 <locusTypeOpen>
-                                    <locusType/>
-                                    <locusTypeOther/>
+                                    <locusType>honey</locusType>
+                                    <locusTypeOther>other</locusTypeOther>
                                 </locusTypeOpen>
-                                <locusName/>
+                                <locusName>TTP</locusName>
                             </resistanceLocus>
                         </resistanceLoci>
-                        <otherLociGenotyped/>
+                        <otherLociGenotyped>true</otherLociGenotyped>
                         <otherLoci>
                             <otherLocus>
                                 <locusTypeOpen>
-                                    <locusType/>
-                                    <locusTypeOther/>
+                                    <locusType>milk</locusType>
+                                    <locusTypeOther>other</locusTypeOther>
                                 </locusTypeOpen>
-                                <locusName/>
+                                <locusName>SPQR</locusName>
                             </otherLocus>
                         </otherLoci>
                     </sequencedLoci>
-                    <infectionComplexityEstimated/>
+                    <infectionComplexityEstimated>true</infectionComplexityEstimated>
                     <infectionComplexityEstimationlociOpen>
-                        <infectionComplexityEstimationloci/>
-                        <infectionComplexityEstimationlociOther/>
+                        <infectionComplexityEstimationloci>NDD</infectionComplexityEstimationloci>
+                        <infectionComplexityEstimationlociOther>OTHER</infectionComplexityEstimationlociOther>
                     </infectionComplexityEstimationlociOpen>
                 </additionalGenotypicInformation>
             </molecular>
             <invitro>
                 <inclusionCriteria/>
-                <analysisSite/>
+                <analysisSite>New York</analysisSite>
                 <culture>
-                    <incubatorSystem/>
-                    <co2/>
-                    <healthyErythrocytesSource/>
-                    <hematocrit/>
-                    <bloodGroup/>
+                    <incubatorSystem>candle</incubatorSystem>
+                    <co2>100</co2>
+                    <healthyErythrocytesSource>donor</healthyErythrocytesSource>
+                    <hematocrit>100</hematocrit>
+                    <bloodGroup>O</bloodGroup>
                 </culture>
                 <drugSusceptibilityMedium>
-                    <medium/>
-                    <mediumOther/>
-                    <preparation/>
-                    <serum/>
-                    <serum-finalConcentration/>
-                    <NaHCO3-finalConcentration/>
+                    <medium>rpmi</medium>
+                    <mediumOther>other</mediumOther>
+                    <preparation>aliquots</preparation>
+                    <serum>albumax</serum>
+                    <serum-finalConcentration>10</serum-finalConcentration>
+                    <NaHCO3-finalConcentration>90</NaHCO3-finalConcentration>
                     <hypoxantine>
-                        <hypoxantine-added/>
-                        <hypoxantine-finalConcentration/>
+                        <hypoxantine-added>true</hypoxantine-added>
+                        <hypoxantine-finalConcentration>10</hypoxantine-finalConcentration>
                     </hypoxantine>
                     <oroticAcid>
-                        <oroticAcid-added/>
-                        <oroticAcid-finalConcentration/>
+                        <oroticAcid-added>true</oroticAcid-added>
+                        <oroticAcid-finalConcentration>100</oroticAcid-finalConcentration>
                     </oroticAcid>
                     <glucose>
-                        <glucose-added/>
-                        <glucose-finalConcentration/>
+                        <glucose-added>true</glucose-added>
+                        <glucose-finalConcentration>33</glucose-finalConcentration>
                     </glucose>
-                    <antibioticTreatments/>
+                    <antibioticTreatments>
+                    <antibioticTreatment>
+                    <antibioticOpen>
+                    <!-- Add more here -->
+                    </antibioticOpen>
+                    </antibioticTreatment>
+                    </antibioticTreatments>
                 </drugSusceptibilityMedium>
                 <susceptibility>
                     <timeOfIncubation/>

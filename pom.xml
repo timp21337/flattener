@@ -15,11 +15,11 @@
   </properties>
 
   <dependencies>
-<dependency>
-    <groupId>com.sun.xsom</groupId>
-    <artifactId>xsom</artifactId>
-    <version>20100725</version>
-</dependency>
+    <dependency>
+      <groupId>com.sun.xsom</groupId>
+      <artifactId>xsom</artifactId>
+      <version>20100725</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -27,4 +27,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-compiler-plugin</artifactId>
+       <configuration>
+        <source>1.6</source>
+        <target>1.6</target>
+       </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
